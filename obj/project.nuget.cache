@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ILn7xKbo/enANOZ2LAOidjcut1qS176J8CiKYfeScnmd+SaPyUsh0lvtCx7hhHmE850uqPJFhVyq6ggkowth2Q==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\AdventOfCode\\AdventOfCode.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.episerver.com/feed/packages.svc'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
