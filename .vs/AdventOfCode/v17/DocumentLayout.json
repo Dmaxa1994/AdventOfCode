@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Source\\AdventOfCode\\",
+  "WorkspaceRootPath": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\source\\adventofcode\\2024\\day11\\plutostones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\users\\adamo\\source\\repos\\adventofcode\\2024\\day11\\plutostones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|solutionrelative:2024\\day11\\plutostones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\source\\adventofcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\users\\adamo\\source\\repos\\adventofcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\source\\adventofcode\\2024\\day11\\puzzledata.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\users\\adamo\\source\\repos\\adventofcode\\2024\\day11\\puzzledata.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|solutionrelative:2024\\day11\\puzzledata.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\source\\adventofcode\\2024\\day11\\sample.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|c:\\users\\adamo\\source\\repos\\adventofcode\\2024\\day11\\sample.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2A186A77-84EC-49DF-9A67-C05C7EF3B3E4}|AdventOfCode.csproj|solutionrelative:2024\\day11\\sample.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -26,52 +26,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5726b0e3-1012-5233-81f9-d1fad48e7a56}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{9e5ff99f-674b-5d75-83e0-e44617b26d39}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlutoStones.cs",
+              "DocumentMoniker": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\PlutoStones.cs",
+              "RelativeDocumentMoniker": "2024\\Day11\\PlutoStones.cs",
+              "ToolTip": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\PlutoStones.cs",
+              "RelativeToolTip": "2024\\Day11\\PlutoStones.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T08:04:19.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "sample.txt",
-              "DocumentMoniker": "C:\\Source\\AdventOfCode\\2024\\Day11\\sample.txt",
+              "DocumentMoniker": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\sample.txt",
               "RelativeDocumentMoniker": "2024\\Day11\\sample.txt",
-              "ToolTip": "C:\\Source\\AdventOfCode\\2024\\Day11\\sample.txt",
+              "ToolTip": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\sample.txt",
               "RelativeToolTip": "2024\\Day11\\sample.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-11T08:04:54.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T08:04:54.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "puzzledata.txt",
-              "DocumentMoniker": "C:\\Source\\AdventOfCode\\2024\\Day11\\puzzledata.txt",
+              "DocumentMoniker": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\puzzledata.txt",
               "RelativeDocumentMoniker": "2024\\Day11\\puzzledata.txt",
-              "ToolTip": "C:\\Source\\AdventOfCode\\2024\\Day11\\puzzledata.txt",
+              "ToolTip": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\2024\\Day11\\puzzledata.txt",
               "RelativeToolTip": "2024\\Day11\\puzzledata.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -79,24 +67,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlutoStones.cs",
-              "DocumentMoniker": "C:\\Source\\AdventOfCode\\2024\\Day11\\PlutoStones.cs",
-              "RelativeDocumentMoniker": "2024\\Day11\\PlutoStones.cs",
-              "ToolTip": "C:\\Source\\AdventOfCode\\2024\\Day11\\PlutoStones.cs",
-              "RelativeToolTip": "2024\\Day11\\PlutoStones.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T08:04:19.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Source\\AdventOfCode\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Source\\AdventOfCode\\Program.cs",
+              "ToolTip": "C:\\Users\\adamo\\source\\repos\\AdventOfCode\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

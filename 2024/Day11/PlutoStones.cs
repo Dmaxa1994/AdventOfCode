@@ -17,92 +17,57 @@ namespace AdventOfCode._2024.Day11
 
         public long CountStones(int blinks)
         {
-            var stonesQueue = new Queue<string>(_puzzleData.Split(" "));
+            var stoneCounts = _puzzleData
+                .Split(" ")
+                .Select(long.Parse)
+                .GroupBy(stone => stone)
+                .ToDictionary(group => group.Key, group => (long)group.Count());
 
             for (var i = 0; i < blinks; i++)
             {
-                Console.SetCursorPosition(0, 0);
-                Console.WriteLine($"Processing blink {i + 1}/{blinks}");
-                Console.WriteLine($"Processing {stonesQueue.Count} stones");
+                var nextStoneCounts = new Dictionary<long, long>();
 
-                var currentCount = stonesQueue.Count;
-
-                // Process each stone in the current level
-                for (var j = 0; j < currentCount; j++)
+                foreach (var (stone, count) in stoneCounts)
                 {
-                    var stone = stonesQueue.Dequeue();
-
-                    if (stone == "0")
+                    if (stone == 0)
                     {
-                        stonesQueue.Enqueue("1");
-                        continue;
+                        AddStone(nextStoneCounts, 1, count);
                     }
-
-                    if (stone.Length % 2 == 0)
+                    else
                     {
-                        var stoneLength = (int)Math.Ceiling(stone.Length / 2.0);
-                        var newStoneLeft = stone.Substring(0, stoneLength);
-                        var newStoneRight = stone.Substring(stoneLength);
-                        newStoneRight = int.Parse(newStoneRight).ToString();
-                        stonesQueue.Enqueue(newStoneLeft);
-                        stonesQueue.Enqueue(newStoneRight);
-                        continue;
-                    }
+                        var length = (int)Math.Floor(Math.Log10(stone)) + 1;
 
-                    var newStone = (long.Parse(stone) * 2024).ToString();
-                    stonesQueue.Enqueue(newStone);
+                        if (length % 2 == 0)
+                        {
+                            var splitPoint = length / 2;
+                            var divisor = (long)Math.Pow(10, splitPoint);
+                            var left = stone / divisor;
+                            var right = stone % divisor;
+
+                            AddStone(nextStoneCounts, left, count);
+                            AddStone(nextStoneCounts, right, count);
+                        }
+                        else
+                        {
+                            var newStone = stone * 2024;
+                            AddStone(nextStoneCounts, newStone, count);
+                        }
+                    }
                 }
+
+                stoneCounts = nextStoneCounts;
             }
 
-            return stonesQueue.Count;
+            return stoneCounts.Values.Sum();
         }
 
-        public long CountStonesOld(int blinks)
+        private static void AddStone(Dictionary<long, long> stoneCounts, long stone, long count)
         {
-            var stones = new List<string>(_puzzleData.Split(" "));
-            var newStones = new List<string>();
-
-            for (var i = 0; i < blinks; i++)
-            {
-                Console.SetCursorPosition(0, 0);
-                Console.WriteLine($"Processing blink {i + 1}/{blinks}");
-                Console.WriteLine($"Processing {stones.Count} stones");
-
-                newStones.Clear();
-
-                foreach (var stone in stones)
-                {
-                    if (stone == "0")
-                    {
-                        newStones.Add("1");
-                        continue;
-                    }
-
-                    if (stone.Length % 2 == 0)
-                    {
-                        var stoneLength = (int)Math.Ceiling(stone.Length / 2.0);
-                        var newStoneLeft = stone.Substring(0, stoneLength);
-                        var newStoneRight = stone.Substring(stoneLength);
-                        newStoneRight = int.Parse(newStoneRight).ToString();
-                        newStones.Add(newStoneLeft);
-                        newStones.Add(newStoneRight);
-                        continue;
-                    }
-
-                    var newStone = (long.Parse(stone) * 2024).ToString();
-                    newStones.Add(newStone);
-                }
-
-                // Swap stones with newStones without recreating
-                var temp = stones;
-                stones = newStones;
-                newStones = temp;
-            }
-
-            return stones.Count;
+            if (stoneCounts.ContainsKey(stone))
+                stoneCounts[stone] += count;
+            else
+                stoneCounts[stone] = count;
         }
-
-
 
         public long Part2()
         {
