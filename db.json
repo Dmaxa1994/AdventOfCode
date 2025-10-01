@@ -1,8 +1,11 @@
 {
-  "sample": [
+  "posts": [
     {
       "id": 1,
-      "prop": "test"
+      "title": "hello"
     }
-  ]
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
